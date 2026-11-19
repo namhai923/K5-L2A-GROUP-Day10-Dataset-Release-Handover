@@ -1,0 +1,40 @@
+{
+ "errors": [
+  {
+   "type": "bbox_out_of_bounds",
+   "target": "img_0068"
+  },
+  {
+   "type": "invalid_class",
+   "target": "img_0083"
+  },
+  {
+   "type": "wrong_hash",
+   "target": "img_0107"
+  },
+  {
+   "type": "missing_image",
+   "target": "img_0117"
+  },
+  {
+   "type": "duplicate_box",
+   "target": "img_0128"
+  },
+  {
+   "type": "thing_overlap",
+   "target": "img_0159"
+  },
+  {
+   "type": "missing_image",
+   "target": "img_0219"
+  },
+  {
+   "type": "guideline_mismatch",
+   "target": "img_0228"
+  },
+  {
+   "type": "scene_leak",
+   "target": "scene_122"
+  }
+ ]
+}

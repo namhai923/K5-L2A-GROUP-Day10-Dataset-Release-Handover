@@ -1,0 +1,221 @@
+{
+ "candidates": [
+  {
+   "image": "img_0014",
+   "type": "instance_merge",
+   "type_options": [
+    "instance_merge"
+   ],
+   "score": 1.0,
+   "evidence": {
+    "class": "hot dog",
+    "segment_id": 13377605,
+    "box_lines": [
+     14,
+     15
+    ],
+    "share_per_box": [
+     1.0,
+     0.564
+    ]
+   },
+   "rank_in_image": 0
+  },
+  {
+   "image": "img_0197",
+   "type": "missing_box",
+   "type_options": [
+    "missing_box"
+   ],
+   "score": 1.0,
+   "evidence": {
+    "segment_id": 7885187,
+    "class": "dog",
+    "pixels": 64386,
+    "bbox_px": [
+     115,
+     18,
+     567,
+     421
+    ],
+    "best_same_class_cover": 0.0
+   },
+   "rank_in_image": 0
+  },
+  {
+   "image": "img_0247",
+   "type": "instance_merge",
+   "type_options": [
+    "instance_merge"
+   ],
+   "score": 1.0,
+   "evidence": {
+    "class": "carrot",
+    "segment_id": 12172114,
+    "box_lines": [
+     2,
+     3
+    ],
+    "share_per_box": [
+     0.834,
+     0.447
+    ]
+   },
+   "rank_in_image": 0
+  },
+  {
+   "image": "img_0003",
+   "type": "class_swap",
+   "type_options": [
+    "class_swap",
+    "category_swap"
+   ],
+   "score": 0.998,
+   "evidence": {
+    "box_line": 0,
+    "det_class": "cake",
+    "segment_id": 8091175,
+    "pan_class": "donut",
+    "iou": 0.998,
+    "hint": "mo anh: vat dung la pan_class -> class_swap; vat dung la det_class -> category_swap"
+   },
+   "rank_in_image": 0
+  },
+  {
+   "image": "img_0018",
+   "type": "class_swap",
+   "type_options": [
+    "class_swap",
+    "category_swap"
+   ],
+   "score": 0.996,
+   "evidence": {
+    "box_line": 0,
+    "det_class": "person",
+    "segment_id": 9613474,
+    "pan_class": "toilet",
+    "iou": 0.996,
+    "hint": "mo anh: vat dung la pan_class -> class_swap; vat dung la det_class -> category_swap"
+   },
+   "rank_in_image": 0
+  },
+  {
+   "image": "img_0235",
+   "type": "class_swap",
+   "type_options": [
+    "class_swap",
+    "category_swap"
+   ],
+   "score": 0.996,
+   "evidence": {
+    "box_line": 0,
+    "det_class": "dog",
+    "segment_id": 1040193,
+    "pan_class": "cat",
+    "iou": 0.996,
+    "hint": "mo anh: vat dung la pan_class -> class_swap; vat dung la det_class -> category_swap"
+   },
+   "rank_in_image": 0
+  },
+  {
+   "image": "img_0193",
+   "type": "class_swap",
+   "type_options": [
+    "class_swap",
+    "category_swap"
+   ],
+   "score": 0.994,
+   "evidence": {
+    "box_line": 1,
+    "det_class": "bird",
+    "segment_id": 85938,
+    "pan_class": "kite",
+    "iou": 0.994,
+    "hint": "mo anh: vat dung la pan_class -> class_swap; vat dung la det_class -> category_swap"
+   },
+   "rank_in_image": 0
+  },
+  {
+   "image": "img_0085",
+   "type": "class_swap",
+   "type_options": [
+    "class_swap",
+    "category_swap"
+   ],
+   "score": 0.991,
+   "evidence": {
+    "box_line": 6,
+    "det_class": "donut",
+    "segment_id": 4453713,
+    "pan_class": "cake",
+    "iou": 0.991,
+    "hint": "mo anh: vat dung la pan_class -> class_swap; vat dung la det_class -> category_swap"
+   },
+   "rank_in_image": 0
+  },
+  {
+   "image": "img_0224",
+   "type": "bbox_drift",
+   "type_options": [
+    "bbox_drift"
+   ],
+   "score": 0.066,
+   "evidence": {
+    "box_line": 1,
+    "class": "horse",
+    "segment_id": 4998332,
+    "cover": 0.934,
+    "iou": 0.202
+   },
+   "rank_in_image": 0
+  },
+  {
+   "image": "img_0093",
+   "type": "bbox_drift",
+   "type_options": [
+    "bbox_drift"
+   ],
+   "score": 0.044,
+   "evidence": {
+    "box_line": 2,
+    "class": "cow",
+    "segment_id": 2661924,
+    "cover": 0.956,
+    "iou": 0.875
+   },
+   "rank_in_image": 0
+  },
+  {
+   "image": "img_0091",
+   "type": "bbox_drift",
+   "type_options": [
+    "bbox_drift"
+   ],
+   "score": 0.025,
+   "evidence": {
+    "box_line": 2,
+    "class": "car",
+    "segment_id": 6449663,
+    "cover": 0.975,
+    "iou": 0.739
+   },
+   "rank_in_image": 0
+  },
+  {
+   "image": "img_0182",
+   "type": "bbox_drift",
+   "type_options": [
+    "bbox_drift"
+   ],
+   "score": 0.024,
+   "evidence": {
+    "box_line": 4,
+    "class": "parking meter",
+    "segment_id": 10454065,
+    "cover": 0.976,
+    "iou": 0.639
+   },
+   "rank_in_image": 0
+  }
+ ]
+}
