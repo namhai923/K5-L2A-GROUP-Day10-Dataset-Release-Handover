@@ -1,0 +1,13 @@
+image,type,annotator,reviewer,action
+000000000139,duplicate_box,A04,Q01,gan lai nhan detection theo guideline v1.2
+000000000872,missing_box,A04,Q01,gan lai nhan detection theo guideline v1.2
+000000001503,missing_box,A04,Q01,gan lai nhan detection theo guideline v1.2
+000000001818,missing_box,A04,Q01,gan lai nhan detection theo guideline v1.2
+000000004495,invalid_class,A02,Q01,gan lai nhan detection theo guideline v1.2
+000000004795,class_swap,A02,Q01,gan lai nhan detection theo guideline v1.2
+000000006954,duplicate_box,A03,Q03,gan lai nhan detection theo guideline v1.2
+000000007278,bbox_drift,A03,Q03,gan lai nhan detection theo guideline v1.2
+000000012748,missing_box,A03,Q01,gan lai nhan detection theo guideline v1.3
+000000014888,class_swap,A01,Q01,gan lai nhan detection theo guideline v1.3
+000000020059,invalid_class,A01,Q03,gan lai nhan detection theo guideline v1.3
+000000022892,bbox_out_of_bounds,A01,Q02,gan lai nhan detection theo guideline v1.3

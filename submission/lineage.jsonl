@@ -1,0 +1,4 @@
+{"event": "inject", "release_id": "lab250_6112a1fce312", "seed": 36, "detail": "r36"}
+{"event": "train", "release_id": "lab250_6112a1fce312", "run_id": "R-021"}
+{"event": "decision", "release_id": "lab250_6112a1fce312", "decision": "HOLD", "detail": "QC v1: 22/250 anh loi = 8.8% > 2%"}
+{"event": "release", "release_id": "lab250_6112a1fce312_v2", "parent": "lab250_6112a1fce312"}

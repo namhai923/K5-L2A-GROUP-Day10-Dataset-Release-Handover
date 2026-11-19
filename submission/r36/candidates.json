@@ -1,0 +1,220 @@
+{
+ "candidates": [
+  {
+   "image": "000000000872",
+   "type": "missing_box",
+   "type_options": [
+    "missing_box"
+   ],
+   "score": 1.0,
+   "evidence": {
+    "segment_id": 12234672,
+    "class": "person",
+    "pixels": 47692,
+    "bbox_px": [
+     164,
+     126,
+     429,
+     607
+    ],
+    "best_same_class_cover": 0.0
+   },
+   "rank_in_image": 0
+  },
+  {
+   "image": "000000001503",
+   "type": "missing_box",
+   "type_options": [
+    "missing_box"
+   ],
+   "score": 1.0,
+   "evidence": {
+    "segment_id": 10922152,
+    "class": "keyboard",
+    "pixels": 4083,
+    "bbox_px": [
+     161,
+     152,
+     315,
+     198
+    ],
+    "best_same_class_cover": 0.0
+   },
+   "rank_in_image": 0
+  },
+  {
+   "image": "000000007386",
+   "type": "instance_merge",
+   "type_options": [
+    "instance_merge"
+   ],
+   "score": 1.0,
+   "evidence": {
+    "class": "bicycle",
+    "segment_id": 855829,
+    "box_lines": [
+     2,
+     3
+    ],
+    "share_per_box": [
+     0.601,
+     0.439
+    ]
+   },
+   "rank_in_image": 0
+  },
+  {
+   "image": "000000004795",
+   "type": "class_swap",
+   "type_options": [
+    "class_swap",
+    "category_swap"
+   ],
+   "score": 0.998,
+   "evidence": {
+    "box_line": 0,
+    "det_class": "vase",
+    "segment_id": 6383217,
+    "pan_class": "cat",
+    "iou": 0.998,
+    "hint": "mo anh: vat dung la pan_class -> class_swap; vat dung la det_class -> category_swap"
+   },
+   "rank_in_image": 0
+  },
+  {
+   "image": "000000014888",
+   "type": "class_swap",
+   "type_options": [
+    "class_swap",
+    "category_swap"
+   ],
+   "score": 0.998,
+   "evidence": {
+    "box_line": 0,
+    "det_class": "sheep",
+    "segment_id": 2766656,
+    "pan_class": "cow",
+    "iou": 0.998,
+    "hint": "mo anh: vat dung la pan_class -> class_swap; vat dung la det_class -> category_swap"
+   },
+   "rank_in_image": 0
+  },
+  {
+   "image": "000000020333",
+   "type": "class_swap",
+   "type_options": [
+    "class_swap",
+    "category_swap"
+   ],
+   "score": 0.995,
+   "evidence": {
+    "box_line": 2,
+    "det_class": "bowl",
+    "segment_id": 8026746,
+    "pan_class": "wine glass",
+    "iou": 0.995,
+    "hint": "mo anh: vat dung la pan_class -> class_swap; vat dung la det_class -> category_swap"
+   },
+   "rank_in_image": 0
+  },
+  {
+   "image": "000000018833",
+   "type": "class_swap",
+   "type_options": [
+    "class_swap",
+    "category_swap"
+   ],
+   "score": 0.99,
+   "evidence": {
+    "box_line": 0,
+    "det_class": "cat",
+    "segment_id": 6976126,
+    "pan_class": "dog",
+    "iou": 0.99,
+    "hint": "mo anh: vat dung la pan_class -> class_swap; vat dung la det_class -> category_swap"
+   },
+   "rank_in_image": 0
+  },
+  {
+   "image": "000000001818",
+   "type": "missing_box",
+   "type_options": [
+    "missing_box",
+    "bbox_drift"
+   ],
+   "score": 0.496,
+   "evidence": {
+    "segment_id": 8092282,
+    "class": "zebra",
+    "pixels": 120106,
+    "bbox_px": [
+     0,
+     1,
+     638,
+     425
+    ],
+    "best_same_class_cover": 0.504
+   },
+   "rank_in_image": 0
+  },
+  {
+   "image": "000000007278",
+   "type": "bbox_drift",
+   "type_options": [
+    "bbox_drift"
+   ],
+   "score": 0.097,
+   "evidence": {
+    "box_line": 1,
+    "class": "surfboard",
+    "segment_id": 12960199,
+    "cover": 0.903,
+    "iou": 0.625
+   },
+   "rank_in_image": 0
+  },
+  {
+   "image": "000000012748",
+   "type": "missing_box",
+   "type_options": [
+    "missing_box",
+    "bbox_drift"
+   ],
+   "score": 0.06,
+   "evidence": {
+    "segment_id": 4079972,
+    "class": "person",
+    "pixels": 56935,
+    "bbox_px": [
+     221,
+     139,
+     480,
+     632
+    ],
+    "best_same_class_cover": 0.94
+   },
+   "rank_in_image": 0
+  },
+  {
+   "image": "000000000872",
+   "type": "missing_box",
+   "type_options": [
+    "missing_box"
+   ],
+   "score": 1.0,
+   "evidence": {
+    "segment_id": 8620683,
+    "class": "person",
+    "pixels": 25073,
+    "bbox_px": [
+     145,
+     101,
+     437,
+     558
+    ],
+    "best_same_class_cover": 0.0
+   },
+   "rank_in_image": 1
+  }
+ ]
+}

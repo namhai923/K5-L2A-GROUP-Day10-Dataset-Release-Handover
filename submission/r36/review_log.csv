@@ -1,0 +1,12 @@
+image,type,verdict,note
+000000000872,missing_box,confirmed,"cầu thủ áo trắng đội mũ bảo hiểm đang chạy ở giữa ảnh, panoptic có mask person nhưng labels chỉ có box baseball glove và sports ball, không có box person nào"
+000000001503,missing_box,confirmed,"bàn phím trắng nằm trước loa trên bàn, nhìn rõ phím; panoptic có segment keyboard nhưng labels chỉ có laptop, mouse, tv, không có box keyboard"
+000000007386,instance_merge,confirmed,"trong garage có hai chiếc xe đạp treo trên tường, một trên một dưới; detection có hai box bicycle riêng (dòng 2, 3) nhưng panoptic gộp cả hai thành một segment"
+000000004795,class_swap,confirmed,"vật trong box là con mèo lông đen xám thấy rõ tai và râu, ngồi trước màn hình; panoptic ghi cat đúng, detection ghi vase sai"
+000000014888,class_swap,confirmed,"bò sữa lông đen trắng đang được vắt sữa bằng máy, thấy bầu vú và cụm vắt sữa đỏ; panoptic ghi cow đúng, detection ghi sheep sai"
+000000020333,category_swap,confirmed,"vật là chậu kim loại miệng rộng đựng đất, không có chân ly; detection ghi bowl đúng, panoptic ghi wine glass sai"
+000000018833,category_swap,confirmed,"con mèo mướp xám trắng đang ngủ gối đầu lên giày, thấy tai nhọn và râu mèo; detection ghi cat đúng, panoptic ghi dog sai"
+000000001818,missing_box,confirmed,"có hai con ngựa vằn: con lớn bên trái chiếm nửa ảnh và con non bên phải; box zebra duy nhất (dòng 0) khớp con non, con lớn không có box"
+000000007278,bbox_drift,confirmed,"ván lướt sóng dưới chân người lướt, box surfboard lệch sang phải và xuống dưới: mũi ván bên trái nằm ngoài box, bên phải box thừa ra mặt nước"
+000000012748,missing_box,confirmed,"người đàn ông áo đỏ bế em bé cạnh con ngựa; box person duy nhất (dòng 1) khớp đúng bbox em bé, người đàn ông không có box"
+000000000872,missing_box,confirmed,"cầu thủ áo xanh đội mũ lưỡi trai đứng sau bắt bóng cũng không có box person; cùng ảnh và cùng loại lỗi với dòng đầu"
