@@ -15,15 +15,16 @@ from __future__ import annotations  # cho phép ghi kiểu dữ liệu kiểu m�
 import argparse  # đọc tham số dòng lệnh
 import csv  # đọc jobs.csv
 import hashlib  # tính sha256
+import io  # kiểm tra kiểu luồng xuất
 import itertools  # groupby để gom các pixel liền nhau trên một hàng
 import json  # đọc/ghi file JSON
 import sys  # chỉnh sys.path và stdout
 from pathlib import Path  # thao tác đường dẫn
 
-# Thư mục scripts/ nằm cạnh thư mục validator/ trong repo
-SCRIPTS_DIR = Path(__file__).resolve().parent.parent / "scripts"  # đường dẫn tới scripts/
-sys.path.insert(0, str(SCRIPTS_DIR))  # thêm scripts/ vào đường tìm module để import pngutil
-import pngutil  # noqa: E402  # hàm đọc PNG RGB 8-bit, chỉ dùng thư viện chuẩn
+# Thêm gốc repo vào đường tìm module khi chạy trực tiếp validator/validate.py.
+REPO_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(REPO_ROOT))
+from scripts import pngutil  # noqa: E402  # hàm đọc PNG RGB 8-bit, chỉ dùng thư viện chuẩn
 
 # ---------------------------------------------------------------------------
 # Ngưỡng. Chọn theo định nghĩa lỗi trong docs/DELIVERY.md và đo nhiễu trên lô sạch
@@ -455,11 +456,10 @@ def find_candidates(root: Path, ctx: dict) -> list[dict]:
 
 def main() -> int:
     """Điểm vào: đọc tham số, chạy luật, ghi errors.json và (tuỳ chọn) candidates.json."""
-    try:  # Windows console có thể không in được UTF-8
-        sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # ép stdout sang UTF-8
-        sys.stderr.reconfigure(encoding="utf-8", errors="replace")  # ép stderr sang UTF-8
-    except AttributeError:  # Python cũ không có reconfigure
-        pass  # bỏ qua
+    # Dùng UTF-8 để in thông báo trên terminal Windows.
+    for stream in (sys.stdout, sys.stderr):
+        if isinstance(stream, io.TextIOWrapper):
+            stream.reconfigure(encoding="utf-8", errors="replace")
     ap = argparse.ArgumentParser(description="Validator lo delivery (detection + panoptic)")  # bộ đọc tham số
     ap.add_argument("delivery", help="thu muc delivery")  # tham số vị trí: thư mục delivery
     ap.add_argument("--out", required=True, help="file errors.json (chi loi luat)")  # nơi ghi lỗi luật
